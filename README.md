@@ -68,4 +68,15 @@ new_reviews = ["Great product, very comfortable", "Poor quality, not recommended
 new_reviews_transformed = vectorizer.transform(new_reviews)
 predictions = model.predict(new_reviews_transformed)
 print(predictions)
+#EXPLANATION
+In this project, we aimed to build a predictive model for women's clothing reviews using the Multinomial Naive Bayes algorithm. The primary objective was to classify the sentiment of reviews based on their textual content, facilitating better understanding of customer feedback for retailers.
+
+We began by importing the necessary libraries and loading the dataset. The data was then explored to understand its structure, identify missing values, and perform initial visualizations. Data preprocessing steps included handling missing values, converting categorical variables, and extracting features using TF-IDF vectorization.
+
+Our target variable was the sentiment rating, and the feature variable was the vectorized textual reviews. We split the data into training and testing sets to evaluate the performance of our model. After training the Multinomial Naive Bayes model, we assessed its accuracy and generated a classification report.
+
+The model achieved satisfactory accuracy, indicating its effectiveness in predicting the sentiment of clothing reviews. Visualizations were created to illustrate the distribution of ratings and the importance of different words in determining sentiment.
+
+Overall, this project demonstrates the application of text classification techniques in analyzing customer reviews, providing valuable insights for enhancing customer satisfaction and improving product offerings.
+
 
